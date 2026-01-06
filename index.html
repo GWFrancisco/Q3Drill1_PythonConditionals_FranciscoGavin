@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <title>Quiz Average Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        input {
+            padding: 8px;
+            width: 220px;
+            text-align: center;
+        }
+        button {
+            margin: 15px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background-color: #0c31d8;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Quiz Average Calculator</h2>
+    
+    <input type="number" id="score1" placeholder="Enter Quiz 1 score (0-100)" min="0" max="100"><br>
+    <input type="number" id="score2" placeholder="Enter Quiz 2 score (0-100)" min="0" max="100"><br>
+
+    <button type="button" py-click="compute_average">Average Score</button>
+
+    <div id="output"></div>
+    <script type="py" src="main.py"></script>
+</body>
+</html>
